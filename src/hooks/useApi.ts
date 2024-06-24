@@ -1,10 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
+import { Character } from '../types';
 
-interface Character
-{
-    id: number;
-    name: string;
-}
+
 
 const fetchCharacters = async ( query: string ): Promise<{ results: Character[]; }> =>
 {
