@@ -1,20 +1,21 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 import MultiSelectAutocomplete from '../components/MultiSelectAutoComplete';
 
 export default function HomeScreen ()
 {
     return (
-        <View style={ styles.container }>
+        <SafeAreaView style={ styles.container }>
             <MultiSelectAutocomplete />
-        </View>
+        </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create( {
     container: {
         flex: 1,
-        padding: 16,
+        paddingTop: 32,
+        padding: 10,
         backgroundColor: '#fff',
     },
 } );
